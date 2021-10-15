@@ -1,1 +1,1 @@
-Group: Coffee<br/>
+Group: Coffee break
