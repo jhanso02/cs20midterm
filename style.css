@@ -1,1 +1,40 @@
+.nav {
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    top: 0; left:0; width: 100%; height: 75px;
+    background-color: rgb(255, 254, 244);
+}
 
+.nav img {
+    float: left;
+    height: 60px;
+    padding: 5px 5px;
+}
+
+.navbar_right {
+    float: right;
+    margin-right: 2%;
+}
+
+.nav li {
+    display: inline-block;
+    position: right;
+    font-size: 30;
+    color: #154e1d;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-sizing:border-box;
+    border: 2px solid #000; 
+    margin-left: 20px; 
+}
+
+.nav li:hover {
+    color:#fff;
+    background-color: #154e1d;
+}
+
+.nav li a {
+    color: inherit;
+    text-decoration: none;
+}
