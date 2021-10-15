@@ -39,3 +39,40 @@
     color: inherit;
     text-decoration: none;
 }
+
+/* footer CSS  */
+
+.footer {
+	font-family: bold serif; 
+	font-size: 20px;
+	background-color: aliceblue;
+	text-align: center;
+}
+
+.footerImage{
+	max-height: 30%;
+}
+
+.footer ul {
+	letter-spacing: 2.5px;
+}
+
+.footer a:hover {
+    color: #d5d5d4;
+    background-color: #F6F6F6;
+}
+
+/* line that seperates the footer with the image */
+
+.footer hr {
+	width: 70%;
+	height:3px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#0D395A;
+	border: 0 none;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+
