@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <style>
+    .fa{
+        padding: 5%;
+        font-size: 300%;
+        width: 5%;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        /* background-color: rgb(22, 39, 190); */
+        color:rgb(190, 190, 22);
+        border: solid 2px;
+    }
+    .fa:hover{
+        background-color: rgb(190, 190, 22);
+        color:rgb(255, 255, 255);
+    }
+    .row:after{
+        content:"";
+        display: table;
+        clear:both;
+    }
+        
+    .column{
+        float: left;
+        text-align: center;
+        margin-top: 0%;
+    }
+    .left{
+        width:30%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .right{
+        width:50%;           
+        margin-top: 5%;
+    } 
+
+    input[type=text], select {
+        width: 25%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        margin: 8px 0;
+        /* background-color: tomato; */
+    }
+
+    input[type=submit]{
+        
+        position: center; /* Place center  */
+        width: 30%;
+        padding: 14px 20px;
+        box-sizing: border-box;
+        margin: 8px 0;
+        border: solid 1px;
+        border-radius: 4px;
+    }
+    form{
+        margin-left: 2%;
+        border: solid 2px;
+        position: relative;
+        width: 90%;
+        height: 80%;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-bottom: 5%;
+    }
+
+
+/* #map {
+  height: 300px;
+  width: 100%;
+  background-color: tomato;
+} */
+    </style>
+    
+</head>
+
+<body>
+
+    <h1 style="text-align:center"> Let's Meet! </h1>
+
+    <!-- form  -->
+    <!-- <div style="align-items: center">
+        <div class = "row">
+
+            <div class = "column left" style="width:40%;" >
+                <h2> Schedule a meeting. </h2>
+                Email box here?
+
+
+            </div>
+
+            <div class = "column right" style="width:40%;">
+                <h2> Stay in the Know </h2>
+            <form> 
+            
+            <h3 style="padding-left: 5%";> Sign up with your email address to recieve news and updates about Golden Door Scholars. </h3>
+            
+            <input  type="text" id = "firstName" placeholder = "First Name">
+            <input  type="text" id = "lastName" placeholder = "Last Name">
+            <input  type="text" id = "email" placeholder = "Email Address">
+            <input  type="submit" type="submit" value ="YES PLEASE!">
+            </form>
+            </div>
+
+            
+
+        </div> -->
+        <h2> Stay in the Know </h2>
+        <form> 
+        
+        <h3 style="padding-left: 5%";> Sign up with your email address to recieve news and updates about Golden Door Scholars. </h3>
+        
+        <input  type="text" id = "firstName" placeholder = "First Name">
+        <input  type="text" id = "lastName" placeholder = "Last Name">
+        <input  type="text" id = "email" placeholder = "Email Address">
+        <input  type="submit" type="submit" value ="YES PLEASE!">
+        </form>
+
+    </div>
+    <!-- social media  -->
+    <div>
+        <h1 style="text-align:center; padding-top: 5%;">  Connect With The Community! </h1> 
+
+            <a href= "https://www.instagram.com/goldendoorscholars/?hl=en" target="_blank" class="fa fa-instagram" style="margin-left: 10%;"></a>
+            <a href= "https://www.facebook.com/GoldenDoorScholars" target="_blank" class="fa fa-facebook" ></a>
+            <a href= "https://www.youtube.com/channel/UCKl7Gq3eUZUuWiVUA3M6PvQ" target="_blank" class="fa fa-youtube"></a> 
+            <a href= "https://www.linkedin.com/company/golden-door-scholars/" target="_blank" class="fa fa-linkedin"></a> 
+            <a href= "https://twitter.com/goldendoorschol?lang=en" target="_blank" class="fa fa-twitter"></a> <!-- TO DO: Ask someone who has twitter to find them-->
+    </div>
+
+    <div class = "row" style="background-color: rgb(199, 165, 199);">
+        <div class = "column left">
+            <h1> Pending</h1>
+            
+            <!-- <div id = "map" > fejfn</div>
+            <script>
+                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+            </script>
+            <script>
+                function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.036 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+            </script>
+            -->
+        </div> 
+
+        <div class = "column right">
+            <h3> Hedquarters </h3>
+            <h4> Phone: +1(843)233-4894 </h4>
+            <h4> Email: info@goldendoorscholars.org </h4> <!--- make this a popup link -->
+            <h4> 1423 Red Ventures Drive <br> Fort Mill, SC 29707 </h4>
+            
+        </div>
+    </div>
+
+</body> 
+</html>
