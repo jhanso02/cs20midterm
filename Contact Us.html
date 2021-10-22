@@ -10,8 +10,7 @@
         width: 5%;
         text-align: center;
         text-decoration: none;
-        margin: 5px 2px;
-        /* background-color: rgb(22, 39, 190); */
+        margin: 5px 2px; 
         color:rgb(190, 190, 22);
         border: solid 2px;
     }
@@ -68,14 +67,26 @@
         padding-left: 5%;
         padding-bottom: 5%;
     }
-
-
-/* #map {
-  height: 300px;
-  width: 100%;
-  background-color: tomato;
-} */
     </style>
+	<script type = "text/javascript" >
+		firstNArray = [];
+    		lastNArray = [];
+		emailArray = [];
+		
+		function UpdateList(){
+		x = document.getElementById('fName');
+		firstName = x.value;
+		firstNArray.push(firstName);
+
+		y = document.getElementById('lName');
+		lastName = y.value;
+		lastNArray.push(lastName);
+
+		z = document.getElementById('email');
+		email= z.value;
+		emailArray.push(email);
+		}
+	</script>
     
 </head>
 
@@ -84,44 +95,17 @@
     <h1 style="text-align:center"> Let's Meet! </h1>
 
     <!-- form  -->
-    <!-- <div style="align-items: center">
-        <div class = "row">
-
-            <div class = "column left" style="width:40%;" >
-                <h2> Schedule a meeting. </h2>
-                Email box here?
-
-
-            </div>
-
-            <div class = "column right" style="width:40%;">
-                <h2> Stay in the Know </h2>
-            <form> 
-            
-            <h3 style="padding-left: 5%";> Sign up with your email address to recieve news and updates about Golden Door Scholars. </h3>
-            
-            <input  type="text" id = "firstName" placeholder = "First Name">
-            <input  type="text" id = "lastName" placeholder = "Last Name">
-            <input  type="text" id = "email" placeholder = "Email Address">
-            <input  type="submit" type="submit" value ="YES PLEASE!">
-            </form>
-            </div>
-
-            
-
-        </div> -->
-        <h2> Stay in the Know </h2>
-        <form> 
+	<h2> Stay in the Know </h2>
+        <form onsubmit = "UpdateList()"> 
         
         <h3 style="padding-left: 5%";> Sign up with your email address to recieve news and updates about Golden Door Scholars. </h3>
         
-        <input  type="text" id = "firstName" placeholder = "First Name">
-        <input  type="text" id = "lastName" placeholder = "Last Name">
-        <input  type="text" id = "email" placeholder = "Email Address">
-        <input  type="submit" type="submit" value ="YES PLEASE!">
+        <input  type="text" name = "First Name" id = "fName" placeholder = "First Name">
+        <input  type="text" name = "Last Name" id = "lName" placeholder = "Last Name">
+        <input  type="text" name = "Email Address" id = "email" placeholder = "Email Address">
+        <input  type="submit" value ="YES PLEASE!" >
         </form>
-
-    </div>
+	
     <!-- social media  -->
     <div>
         <h1 style="text-align:center; padding-top: 5%;">  Connect With The Community! </h1> 
@@ -135,30 +119,7 @@
 
     <div class = "row" style="background-color: rgb(199, 165, 199);">
         <div class = "column left">
-            <h1> Pending</h1>
-            
-            <!-- <div id = "map" > fejfn</div>
-            <script>
-                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-      async
-            </script>
-            <script>
-                function initMap() {
-  // The location of Uluru
-  const uluru = { lat: -25.344, lng: 131.036 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
-            </script>
-            -->
+            <h1> Pending</h1> 
         </div> 
 
         <div class = "column right">
