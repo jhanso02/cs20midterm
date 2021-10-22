@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Support Us</title>
+    <style>
+        html{
+                font-family: sans-serif;
+        }
+
+        h2, p, form {
+        text-align: center;
+        
+        }
+        .intro_to_supportus{
+            padding-top: 10%;
+        }
+
+        input[type=submit] {
+            float: right;
+            font-size: 16px;
+            position: right;
+            border-radius: 15px;
+            font-size: 30;
+            background-color: #154e1d;
+            color: #fff;
+            padding: 10px 15px;
+            box-sizing:border-box;
+            border: 2px solid #000; 
+            margin-left: 20px;   
+        }
+
+        input[type=submit]:hover {
+            font-size: 18px;
+        }
+
+        input[type=text], select, textarea {
+            width: 70%;
+            padding: 12px;
+            border: 1px solid #154e1d;
+            border-radius: 4px;
+            resize: vertical;  
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: rgb(255, 254, 244);
+            padding: 20px;
+            width: 70%;
+            margin: 5% 12% 16% 12%;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive layout*/
+        @media screen and (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav_image">
+            <a href="#logo"><img src="images/GDS+Logo.png"></a>
+        </div>
+        
+        <ul class="navbar_right">
+            <li>
+                <a href="future-scholars.html">Future Scholars</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class='intro_to_supportus'>
+    <h2>Support Us</h2>
+        <p>You are the reason millions of high school graduates are in their dream
+        universities. <br>With your support, we are able to fund these
+        students through their university degrees.<br> You are what inspires them to work hard in school.<br>
+        We are grateful to you for being the reason for our success.
+        <br> If you would like to support our efforts, here is a form to fill out: </p>
+    </div>
+    <script language='javascript'>
+        function validateForm(){
+            let x = document.forms["myForm"]["fname"].value;
+            let y = document.forms["myForm"]["lname"].value;
+            let z = document.forms["myForm"]["email"].value;
+            if(x == ""){
+                alert("First Name must be filled out");
+                return false;
+            }
+            if(y == ""){
+                alert("Last Name must be filled out");
+                return false;
+            }
+            if(z == ""){
+                alert("Email Adress must be filled out");
+                return false;
+            }
+        }
+    </script>
+
+<div class="container">
+    <form name="myForm" action="/action_page.php">
+        <div class="row">
+            <div class="col-25">
+                <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email Adress</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="email" name="email" placeholder="Your Email Address..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="org">Organization</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="org" name="org" placeholder="Your Organization..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="donation">Donation Amount ($)</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="donation" name="donation" placeholder="Your donation amount..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="subject">Message</label>
+            </div>
+            <div class="col-75">
+                <textarea id="message" name="message" placeholder="Write a message.." style="height:100px"></textarea>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+    
+</body>
+
+</html>
