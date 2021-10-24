@@ -61,6 +61,11 @@
 	color: #000000;
 }
 
+.footer a:hover {
+    color: #d5d5d4;
+    font-size: 21px;
+}
+
 .footerImage{
 	max-height: 30%;
 }
@@ -69,9 +74,6 @@
 	letter-spacing: 2.5px;
 }
 
-.footer a:hover {
-    color: #d5d5d4;
-}
 
 /* line that seperates the footer with the image */
 
