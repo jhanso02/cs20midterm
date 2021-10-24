@@ -29,7 +29,7 @@
     position: right;
     border-radius: 15px;
     font-size: 30;
-    color: #154e1d;
+    color:#005757;
     background-color: #fff;
     padding: 10px 15px;
     box-sizing:border-box;
@@ -39,7 +39,7 @@
 
 .nav li:hover {
     color:#fff;
-    background-color: #154e1d;
+    background-color: #005757;
 }
 
 .nav li a {
