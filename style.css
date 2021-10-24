@@ -62,7 +62,7 @@
 	color: #000000;
 }
 
-.footer:hover {
+.footer a:hover {
     color: rgb(190, 190, 22);
     font-size: 21px;
 }
