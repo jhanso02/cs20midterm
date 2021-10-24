@@ -57,13 +57,17 @@
 	text-align: center;
 }
 
+footer:hover{
+       color: rgb(190, 190, 22);
+}
+
 .footer a{
 	text-decoration: none;
 	color: #000000;
 }
 
 .footer a:hover {
-    color: rgb(190, 190, 22);
+    color: #005757;
     font-size: 21px;
 }
 
