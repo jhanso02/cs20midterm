@@ -13,7 +13,7 @@
         
         }
         .intro_to_supportus{
-            padding-top: 10%;
+            padding-top: 8%;
         }
 
         input[type=submit] {
@@ -128,9 +128,14 @@
     </div>
     <script language='javascript'>
         function validateForm(){
+	    let p = document.forms["myForm"]["donation"].value;
             let x = document.forms["myForm"]["fname"].value;
             let y = document.forms["myForm"]["lname"].value;
             let z = document.forms["myForm"]["email"].value;
+	    if(p == ""){
+                alert("Donation Amount must be filled out");
+                return false;
+            }
             if(x == ""){
                 alert("First Name must be filled out");
                 return false;
