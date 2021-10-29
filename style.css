@@ -3,7 +3,7 @@
     display: block;
     position: fixed;
     top: 0; left:0; width: 100%; height: 75px;
-    background-color: rgb(255, 254, 244);
+    background-color:#FFFFFF;
     box-shadow: 0 4px 2px -2px #CCC;
 }
 
@@ -96,7 +96,7 @@
 .footer {
 	font-family: bold serif; 
 	font-size: 20px;
-	background-color: aliceblue;
+	background-color: #FFFFFF;
 	text-align: center;
 }
 
