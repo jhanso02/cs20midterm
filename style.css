@@ -7,6 +7,12 @@
     box-shadow: 0 4px 2px -2px #CCC;
 }
 
+
+ /* Hide burger menu icon initially */
+.nav .icon {
+    display: none;
+}
+
 /* Make nav bar not cover top of page */
 .nav_space {
     visibility: hidden;
@@ -32,10 +38,14 @@
     font-size: 30;
     color:#005757;
     background-color: #fff;
-    padding: 10px 15px;
+    padding: 10px 10px;
     box-sizing:border-box;
     border: 2px solid #000; 
-    margin-left: 15px; 
+    margin-left: 10px; 
+}
+
+.nav li:first-child {
+    margin-left: 0px;
 }
 
 .nav li:hover {
@@ -48,6 +58,39 @@
     text-decoration: none;
 }
 
+/* When page size decreases */
+@media screen and (max-width: 1140px) {
+
+    .navbar_right li{
+        display: none
+    }
+
+    .navbar_right .icon {
+        display: block;
+        border-radius: 15px;
+        color:#005757;
+        background-color: #fff;
+        padding: 10px 10px;
+        border: 2px solid #000; 
+    }
+
+    .navbar_right.responsive {
+        position: relative;
+    }
+    .navbar_right.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar_right.responsive li a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+}
+
+
 /* footer CSS  */
 
 .footer {
@@ -57,30 +100,31 @@
 	text-align: center;
 }
 
-
 .footer a{
 	text-decoration: none;
-	color: #000000;
 }
 
-.footer a:hover {
-    color: #005757;
-}
-
-.footerImage{
-	max-height: 30%;
+.footerImage img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
 }
 
 .footer ul {
 	letter-spacing: 2.5px;
 }
 
+.footer a:hover {
+    color: #d5d5d4;
+    background-color: #F6F6F6;
+}
 
 /* line that seperates the footer with the image */
 
 .footer hr {
 	width: 70%;
-	height:3px;
+	height: 3px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color:#0D395A;
