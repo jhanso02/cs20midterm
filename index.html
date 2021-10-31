@@ -1,11 +1,16 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="keywords" content="scholarship, faq, frequently asked questions,undocumented student, golden door scholars">
+	<title> Home Page- Golden Door Scholars</title>
+	<link rel="icon" href="images/tab_icon.png">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Home page for the Golden Door Scholars">
+	<meta name="keywords" content="scholarship, undocumented student, golden door scholars, college">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<link rel="stylesheet" href="style.css">
-	<title> Home Page </title>	
+	
 	<style>
 		
 		body {
@@ -27,11 +32,23 @@
 		
 		table {
 			align-content: center;
+			width: 95%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 		
 		tr {
 			align-self: center;
 		}
+
+		table td {
+			text-align: center;
+		}
+
+		table td img{
+			max-width: 60%;
+		}
+
 		hr {
 			width: 70%;
 			height:3px;
@@ -42,47 +59,52 @@
 			margin-top: 70px;
 			margin-bottom: 70px;
 		}
-		
-		li {
-			margin: 30%;
-		}
-		
+
+		.button {
+            font-size: larger;
+            padding: 15px;
+            border-radius: 10px;
+            margin:10px
+        }
 		
 	</style>
 </head>
 
 <body>
-	<nav class="nav">
-		<div class="nav_image">
-			<a href="#"><img src="images/GDS-Torch-Door-Logo.png"></a>
-		</div>
-		
-		<ul class="navbar_right">
+    <nav class="nav">
+        <div class="nav_image">
+            <a href="index.html"><img src="images/GDS-Torch-Door-Logo.png"></a>
+        </div>
+        
+        <ul class="navbar_right" id = "my_nav_right">
+            
+            <!-- Hamburger Menu Icon -->
+            <a href="javascript:void(0);" class="icon" onclick="responsive_nav()">   <i class="fa fa-bars"> </i>
+            </a>
+
             <li>
-				<a href="who-we-are.html">Who We Are</a>
-			</li>
+                <a href="who-we-are.html">Who We Are</a>
+            </li>
             <li>
-				<a href="Contact Us.html">Contact Us</a>
-			</li>
+                <a href="Contact Us.html">Contact Us</a>
+            </li>
             <li>
-				<a href="scholar-testemonial.html">Scholar Testimonials</a>
-			</li>
-			<li>
-				<a href="future-scholars.html">Future Scholars</a>
-			</li>
-			
-			<li>
-				<a href="Partner-Schools.html">Partner Schools</a>
-			</li>
-			<li>
-				<a href="faq.html">FAQ</a>
-			</li>
-			
-			<li>
-				<a href="Support-Us.html">Support Us</a>
-			</li>
-		</ul>
-	</nav>
+                <a href="scholar-testemonial.html">Scholar Testimonials</a>
+            </li>
+            <li>
+                <a href="future-scholars.html">Future Scholars</a>
+            </li>
+            <li>
+                <a href="Partner-Schools.html">Partner Schools</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+                <a href="Support-Us.html">Support Us</a>
+            </li> 
+        </ul>
+    </nav>
 	<div class="nav_space"></div>
 	
 	<hr> 
@@ -91,12 +113,17 @@
 	<table>
 		<tr> <h1> GOLDEN DOOR SCHOLAR COMMUNITY </h1> </tr> 
 		
-		<tr>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="images/firstIcon.png" style="max-height: auto; max-width: 25%;"> &nbsp;
-		<img alt="" src="images/secondIcon.png" style="max-height: auto; max-width: 25%;"> &nbsp;
-		<img alt="" src="images/thirdIcon.png" style="max-height: auto; max-width: 25%;"> &nbsp; </tr>
+		<tr>
+			<td><img alt="" src="images/firstIcon.png" > </td>
+			<td> <img alt="" src="images/secondIcon.png" ></td>
+			<td><img alt="" src="images/thirdIcon.png" ></td>
+		</tr>
 		
-
-		<tr><h2>276 CURRENT SCHOLARS &nbsp;&nbsp;&nbsp;189 GRADUATES &nbsp;&nbsp;&nbsp;  20 PARTNER SCHOOLS</h2></tr>
+		<tr>
+			<td><h2>276 CURRENT SCHOLARS </h2> </td>
+			<td><h2>189 GRADUATES</h2></td>
+			<td><h2>20 PARTNER SCHOOLS</h2></td>
+		</tr>
 		
 	</table>
 	
@@ -106,7 +133,6 @@
 		<img alt="" src="images/homePageBanner.jpeg" style="max-width: 100%;max-height: 34%;">
 	
 		<h3> Immigration status shouldn’t determine opportunity.  Tenacity and hard work should. With the Golden Door Scholarship, undocumented students invest in their education and define their futures. </h3>
-		
 	</nav>
 	
 	
@@ -115,20 +141,24 @@
 		<br> 
 		<tr> <h1> UNDOCUMENTED STUDENTS FACE </h1> </tr> 
 		
-		<tr>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="" src="images/firstIcon.png" style="max-height: auto; max-width: 25%;"> &nbsp;
-		<img alt="" src="images/secondIcon.png" style="max-height:auto; max-width: 25%;"> &nbsp;
-		<img alt="" src="images/thirdIcon.png" style="max-height: auto; max-width: 25%;"> &nbsp; </tr>
+		<tr>
+			<td><img alt="" src="images/firstIcon.png" > </td>
+			<td> <img alt="" src="images/secondIcon.png" ></td>
+			<td><img alt="" src="images/thirdIcon.png" ></td>
+		</tr>
 		
 
-		<tr><h2 style="align-content: center; white-space: pre-wrap">STATE AID AND IN-STATE TUITION MAY NOT BE AN OPTION &nbsp;&nbsp;&nbsp; FEDERAL FINANCIAL AID IS NOT AN OPTION &nbsp;&nbsp;&nbsp;  MANY UNDOCUMENTED STUDENTS ARE THE FIRST GENERATION TO PURSUE HIGHER EDUCATION</h2> </tr>
-		
+		<tr><h2 style="align-content: center; white-space: pre-wrap">
+			STATE AID AND IN-STATE TUITION MAY NOT BE AN OPTION<br/>
+			FEDERAL FINANCIAL AID IS NOT AN OPTION <br/>
+			MANY UNDOCUMENTED STUDENTS ARE THE FIRST GENERATION TO PURSUE HIGHER EDUCATION</h2> </tr>
 	</table>
 	
 	<br> 
 	<br> 
 	
 	<div class="buttonOne" style="white-space: pre-wrap;text-align: center;">
-		<input type="button" class="button" onclick="#" value="Apply Now ! "/>
+		<input type="button" class="button" onclick="window.open('https://forms.gle/hJuSc97sBpjv5Ych6', '_blank')" value="Apply Now ! "/>
 	</div>
 	
 	<br>
@@ -141,16 +171,16 @@
 	<hr> 
 	<footer> 
 		<nav class="footer">
-		
+			<br/>
 			<ul>
-					<a href="index.html"> Home </a> &nbsp;
-					<a href="who-we-are.html"> Who Are We </a> &nbsp; 
-					<a href="Contact Us.html"> Contact Us </a> &nbsp;
-					<a href="scholar-testemonial.html"> Scholar Testimonial Page </a> &nbsp; 
-					<a href="future-scholars.html"> Future Scholars </a> &nbsp;
-					<a href="Partner-Schools.html"> Partner Schools </a> &nbsp;
-					<a href="faq.html"> FAQ </a> &nbsp;
-					<a href="Support-Us.html"> Support Us </a> &nbsp;
+					<a href="index.html"> Home </a> 
+					<a href="who-we-are.html"> Who Are We </a>  
+					<a href="Contact Us.html"> Contact Us </a>
+					<a href="scholar-testemonial.html"> Scholar Testimonial Page </a> 
+					<a href="future-scholars.html"> Future Scholars </a> 
+					<a href="Partner-Schools.html"> Partner Schools </a> 
+					<a href="faq.html"> FAQ </a>
+					<a href="Support-Us.html"> Support Us </a>
 			</ul>
 			<hr>
 			<div class="footerImage">
@@ -160,7 +190,18 @@
 			<h3> Copyright &copy; 2021 Golden Door Scholars. </h3> 
 			<br>
 		</nav>
-	</footer>	
+	</footer>
+
+    <script language=javascript>
+        function responsive_nav() {
+            var x = document.getElementById("my_nav_right");
+            if (x.className == "navbar_right") {
+                x.className += " open";
+            } else {
+                x.className = "navbar_right";
+            }
+        }
+    </script>
 	
 </body>
 </html>
