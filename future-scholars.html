@@ -1,32 +1,46 @@
 <!doctype html>
 <html>
-    <head>
-        <meta name="scholarships, undocumented, DACA students, higher education, eligibility" content="noindex">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
-        <title>Future Scholars- Golden Door Scholars</title>
-        <link rel="stylesheet" href="style.css">
-        <style type="text/css">
-			h1, h2{
-				
-				color: #FFFFFF;
-			}
-			
-			h2 {
-				background-color: #007171;
-			}
-			
-        </style>
+<head>
+    <title>Future Scholars- Golden Door Scholars</title>
+    <link rel="icon" href="images/tab_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
-    </head>
+    <meta name="keywords" content="scholarships, undocumented, DACA students, higher education, eligibility, apply">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css">
+        h1, h2{
+            color: #FFFFFF;
+        }
+        h2 {
+            background-color: #007171;
+        }
+        .button {
+            font-size: larger;
+            padding: 15px;
+            border-radius: 10px;
+            margin:10px
+        }
+    </style>
+
+</head>
     <body>
+        <header>
+            <Title> Future Scholars </Title>
+        </header>
 
-	
         <nav class="nav">
             <div class="nav_image">
                 <a href="index.html"><img src="images/GDS-Torch-Door-Logo.png"></a>
             </div>
             
-            <ul class="navbar_right">
+            <ul class="navbar_right" id = "my_nav_right">
+            
+                <!-- Hamburger Menu Icon -->
+                <a href="javascript:void(0);" class="icon" onclick="responsive_nav()">   <i class="fa fa-bars"> </i>
+                </a>
+    
                 <li>
                     <a href="who-we-are.html">Who We Are</a>
                 </li>
@@ -49,9 +63,12 @@
                 
                 <li>
                     <a href="Support-Us.html">Support Us</a>
-                </li>
+                </li> 
+    
             </ul>
         </nav>
+        <div class="nav_space"></div>
+
         <div class="nav_space"></div>
 		
 				
@@ -89,13 +106,13 @@
             </ul>
 		
 	
-		<div class="buttonOne" style="white-space: pre-wrap;text-align: center;">
-			<br>
-			<input type="button" class="button" onclick="#" value="Apply Now ! "/>
+		<div class="buttonOne" style="white-space:pre-wrap; text-align:center;"> <br/>
+			<input type="button" class="button" onclick="window.open('https://forms.gle/hJuSc97sBpjv5Ych6', '_blank')" value="Apply Now ! "/>
 		</div>
 		
-		<br> 
-		
+		<br>
+
+
         <footer> 
             <nav class="footer">
                 <br><br>
@@ -111,12 +128,24 @@
                 </ul>
                 <hr>
                 <div class="footerImage">
-                    <img alt="index.html" src="images/GDSlogo.png" style="max-width: 40%;">
+                    <img alt="index.html" src="images/GDSlogo.png">
                 </div>
                 <hr>
                 <h3> Copyright &copy; 2021 Golden Door Scholars. </h3> 
                 <br>
             </nav>
-        </footer>	  
+        </footer>
+
+        <script language=javascript>
+            function responsive_nav() {
+                var x = document.getElementById("my_nav_right");
+                if (x.className == "navbar_right") {
+                    x.className += " open";
+                } else {
+                    x.className = "navbar_right";
+                }
+            }
+        </script>
+
     </body>
 </html>
