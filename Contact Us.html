@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
 <head>
-    <Title> Contact Us </Title>
+    <Title> Contact Us- Golden Door Scholars</Title>
+    <link rel="icon" href="images/tab_icon.png">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Page for the Golden Door Scholars">
+	<meta name="keywords" content="Contact, Contact us, email, phone, scholarship, undocumented student, golden door scholars, college">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
     <style>
-    .fa{
+    .socials .fa{
         padding: 5%;
         font-size: 300%;
         width: 5%;
@@ -15,7 +22,7 @@
         color:rgb(190, 190, 22);
         border: solid 2px;
     }
-    .fa:hover{
+    .socials .fa:hover{
         background-color: rgb(190, 190, 22);
         color:rgb(255, 255, 255);
     }
@@ -45,12 +52,10 @@
         padding: 12px 20px;
         box-sizing: border-box;
         margin: 8px 0;
-        /* background-color: tomato; */
     }
 
     input[type=submit]{
-        
-        position: center; /* Place center  */
+        position: center;
         width: 30%;
         padding: 14px 20px;
         box-sizing: border-box;
@@ -92,38 +97,41 @@
 </head>
 
 <body>
-	<nav class="nav">
-		<div class="nav_image">
-			<a href="index.html"><img src="images/GDS-Torch-Door-Logo.png"></a>
-		</div>
-		
-		<ul class="navbar_right">
+    <nav class="nav">
+        <div class="nav_image">
+            <a href="index.html"><img src="images/GDS-Torch-Door-Logo.png"></a>
+        </div>
+        
+        <ul class="navbar_right" id = "my_nav_right">
+            
+            <!-- Hamburger Menu Icon -->
+            <a href="javascript:void(0);" class="icon" onclick="responsive_nav()">   <i class="fa fa-bars"> </i>
+            </a>
+
             <li>
-				<a href="who-we-are.html">Who We Are</a>
-			</li>
+                <a href="who-we-are.html">Who We Are</a>
+            </li>
             <li>
-				<a href="Contact Us.html">Contact Us</a>
-			</li>
+                <a href="Contact Us.html">Contact Us</a>
+            </li>
             <li>
-				<a href="scholar-testemonial.html">Scholar Testimonials</a>
-			</li>
-			<li>
-				<a href="future-scholars.html">Future Scholars</a>
-			</li>
-			
-			<li>
-				<a href="Partner-Schools.html">Partner Schools</a>
-			</li>
-			<li>
-				<a href="faq.html">FAQ</a>
-			</li>
-			
-			<li>
-				<a href="Support-Us.html">Support Us</a>
-			</li>
-		</ul>
-	</nav>
-    <div class="nav_space"></div>
+                <a href="scholar-testemonial.html">Scholar Testimonials</a>
+            </li>
+            <li>
+                <a href="future-scholars.html">Future Scholars</a>
+            </li>
+            <li>
+                <a href="Partner-Schools.html">Partner Schools</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+            <li>
+                <a href="Support-Us.html">Support Us</a>
+            </li> 
+        </ul>
+    </nav>
+	<div class="nav_space"></div>
 
     <h1 style="text-align:center"> Let's Meet! </h1>
 
@@ -140,14 +148,14 @@
         </form>
 	
     <!-- social media  -->
-    <div>
+    <div class = "socials">
         <h1 style="text-align:center; padding-top: 5%;">  Connect With The Community! </h1> 
 
             <a href= "https://www.instagram.com/goldendoorscholars/?hl=en" target="_blank" class="fa fa-instagram" style="margin-left: 10%;"></a>
             <a href= "https://www.facebook.com/GoldenDoorScholars" target="_blank" class="fa fa-facebook" ></a>
             <a href= "https://www.youtube.com/channel/UCKl7Gq3eUZUuWiVUA3M6PvQ" target="_blank" class="fa fa-youtube"></a> 
             <a href= "https://www.linkedin.com/company/golden-door-scholars/" target="_blank" class="fa fa-linkedin"></a> 
-            <a href= "https://twitter.com/goldendoorschol?lang=en" target="_blank" class="fa fa-twitter"></a> <!-- TO DO: Ask someone who has twitter to find them-->
+            <a href= "https://twitter.com/goldendoorschol?lang=en" target="_blank" class="fa fa-twitter"></a> 
     </div>
 
     <div class = "row" style="background-color: rgb(199, 165, 199);">
@@ -185,8 +193,16 @@
 			<h3> Copyright &copy; 2021 Golden Door Scholars. </h3> 
 			<br>
 		</nav>
-	</footer>	
-
-
+	</footer>
+    <script language=javascript>
+        function responsive_nav() {
+            var x = document.getElementById("my_nav_right");
+            if (x.className == "navbar_right") {
+                x.className += " open";
+            } else {
+                x.className = "navbar_right";
+            }
+        }
+    </script>
 </body> 
 </html>
