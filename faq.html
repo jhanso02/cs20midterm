@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <Title>FAQ- Golden Door Scholars</Title>
     <link rel="icon" href="images/tab_icon.png">
@@ -9,6 +8,7 @@
     <meta name="description" content="Frequently asked questions for the Golden Door Scholars">
     <meta name="keywords" content="scholarship, faq, frequently asked questions,undocumented student, golden door scholars">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     
     <link rel="stylesheet" href="style.css">
@@ -16,22 +16,29 @@
         .faq_content {
             margin: 0% 2%;
             line-height: 175%;
+            font-size: 13pt;
         }
 
         .mission_statement {
-            padding: 3px;
+            padding: 3px 5%;
             text-align: center;
             margin: 0% 10%;
             font-size: larger;
+            /* Make picture change size as screen does */
+            box-sizing: content-box;
+            color: rgb(255, 255, 245);
+            
+            background-image: url("images/bg_laptop.jpg");
+            background-position: center;
         }
 
         .question_topic {
-            padding: 3px;
+            padding: 1px;
             text-align: center;
             letter-spacing: .2em;
             background: #005757;
             color: #FFF;
-            font-size: larger;
+            font-size: 12pt;
         }
 
     </style>
@@ -62,29 +69,23 @@
             <li>
                 <a href="future-scholars.html">Future Scholars</a>
             </li>
-            
             <li>
                 <a href="Partner-Schools.html">Partner Schools</a>
             </li>
             <li>
                 <a href="faq.html">FAQ</a>
             </li>
-            
             <li>
                 <a href="Support-Us.html">Support Us</a>
             </li> 
-
         </ul>
     </nav>
     <div class="nav_space"></div>
 
     <div class="faq_content">
 
-    
-    
-    <!-- TODO: Check what the actual mission statement should be -->
     <div class="mission_statement">
-        <h2 style="text-align:center;">Mission Statement:</h2>
+        <h3 style="text-align:center;">Mission Statement:</h3>
     <p>
     Immigration status shouldn’t determine opportunity. Tenacity and hard work should. With the Golden Door Scholarship, undocumented students invest in their education and define their futures.</p>
     </div>
@@ -162,6 +163,11 @@
                 x.className = "navbar_right";
             }
         }
+
+        $(document).ready(function(){
+            $(".mission_statement p").hide().fadeIn(3500)
+        });
+    
     </script>
 
 </body>
