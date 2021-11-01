@@ -4,7 +4,7 @@
 <head>
     <Title> Who We Are </Title>
     <link rel="stylesheet" href="style.css">
-    <style>
+      <style>
         .row:after{
             content:"";
             display: table;
@@ -37,13 +37,11 @@
             width:70%;
         }
         button{
-            position: relative; /* make center */
+            position: relative; 
             width: 20%;
             height: 40%;
             background-color:rgb(255, 255, 255);
-            /* background-color: rgb(226, 213, 95); */
             font-size: 16px;
-            /* border-radius: 30%; */
             border: solid 5px;
             margin: 4px 2px;
             padding: 15px 32px;
@@ -57,6 +55,60 @@
             background-color: rgb(225, 180, 30);
             color: white;
             border:solid 5px rgb(225, 180, 30);
+        }
+
+        .quote{
+            font-size: x-large;
+        }
+        
+        .top{
+            background-color: cornflowerblue;
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 4% ;
+        }
+        h1{
+            font-size: xx-large;
+            text-align: center ;
+        }
+        #title{
+            margin-top: 8%;
+            font-size:400%;
+        }
+        @media screen and (max-width: 800px){
+            .column {
+                width: 100%;
+                margin-bottom: 5%;
+                align-items: center;
+            }
+            #founder{
+                width: 50%;
+                position: relative;
+            }
+        }
+        @media screen and (max-width: 600px){
+            .column {
+                width: 100%;
+                margin-bottom: 5%;
+            }
+            .left{
+               margin-left: 0%;
+            }
+            
+            p{
+                font-size: 90%;
+                line-height: 200%;
+                margin-top: 0%;
+            }
+
+            .quote{
+                font-size: 100%;
+                line-height: 170%;
+            }
+
+            button{
+                width: 50%;
+            }
         }
     </style>
 </head>
@@ -96,23 +148,24 @@
 	</nav>
     <div class="nav_space"></div>
 
-    <div> 
-        <h1 style="text-align: center"> The GDS Story </h1>
-        <p>
+   <div> 
+        <h1 id = "title" style="margin-top: 5%;">Our Story</h1>
+        <p class = "quote" style="padding-left: 10%;padding-right: 10%;padding-bottom: 2%;">
            "Give me your tired, your poor, your huddled masses, yearning to breathe free,
            The wretched refuse of your teeming shore. Send these, the homeless, tempest-tost 
            to me, I lift my lamp beside the golden door!” This country's greatness and true 
            genius lies in its diversity. ... It's a statement of values of our country. " 
         </p>
     </div>
+
     <div>
-        <h1 style="text-align: center"> The Founder </h1>
+        <h1 style="text-align: center; margin-bottom: 0%;"> The Founder </h1>
         <div class ="row">
             <div class = "column left">
-                <img src="images/founder.jpeg">
+                <center><img id = "founder" src="images/founder.jpeg" style="display: flex;"></center>
             </div>
             <div class = "column right">
-                <p>
+                <p style="line-height: 150%; font-size: large;">
                     Ric Elias is the CEO of Red Ventures, a portfolio of growing digital companies 
                     headquartered in Charlotte, North Carolina. Ric’s leadership style and personal 
                     life are deeply influenced by his experience as a survivor of Flight 1549, also 
@@ -127,15 +180,13 @@
                     we have impacted 473 undocumented students by partnering with schools to cover tuition,
                     room, and board for a four-year degree. Our scholars also have access to mentors, internship, 
                     and job search support, along with other professional growth opportunities.
-
-                    <!-- Fix this  -->
-                    <button type="button" onclick = "location.href = 'https://www.youtube.com/watch?v=8_zk2DpgLCs'; target='_blank'" style="display: center;height: 5%; width: 80%; border: solid 2px;"> Watch My Story </button>
                 </p>
+                <button type="button" onclick = "window.open( 'https://www.youtube.com/watch?v=8_zk2DpgLCs','_blank');" style="display: center;height: 5%; width: 50%; border: solid 2px;"> Watch My Story </button>
             </div>
         </div>
     </div>
     <div class = "row">
-        <h1 style="text-align: center"> Who Are We?</h1>
+        <h1 id = "title" style="text-align: center"> Who Are We?</h1>
         <div class = "column left">
             <img src="images/Emily Vanchister.jpeg">
             <h4> Emily Vanchister </h4>
@@ -166,10 +217,15 @@
         </div>
     </div>
 
-    <div>
-        <!-- link not working-->
-        <button type="button" onclick = "location.href = 'Contact Us.html'" style="display: center;"> Contact Us! </button>
+    <div style= "display: flex; align-items: center;justify-content: center;">
+        <button type="button" id = "contact" onclick = "location.href = 'Contact Us.html'" style="display: center;"> Contact Us! </button>
     </div>
+
+    <script>
+        function openPage(){
+            window.location.href = "https://www.youtube.com/watch?v=8_zk2DpgLCs";
+        }
+    </script> 
     
     <footer> 
 		<nav class="footer">
