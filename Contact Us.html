@@ -11,19 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     
-    <style>
-    .socials .fa{
+   <style>
+    .fa{
         padding: 5%;
         font-size: 300%;
         width: 5%;
         text-align: center;
         text-decoration: none;
-        margin: 5px 2px; 
-        color:rgb(190, 190, 22);
+        margin: 5px 2px;
+        /* background-color: rgb(22, 39, 190); */
+        color:rgb(225, 180, 30);
         border: solid 2px;
     }
-    .socials .fa:hover{
-        background-color: rgb(190, 190, 22);
+    .fa:hover{
+        background-color: rgb(225, 180, 30);
         color:rgb(255, 255, 255);
     }
     .row:after{
@@ -38,24 +39,43 @@
         margin-top: 0%;
     }
     .left{
-        width:30%;
+        width:60%;
         margin-left: 5%;
-        margin-top: 5%;
     }
     .right{
-        width:50%;           
-        margin-top: 5%;
+        width:30%;           
+
     } 
+
+    .leftIm{
+        width:30%;
+        margin-left: 5%;
+    }
+    .rightIm{
+        width:30%;           
+
+    } 
+    .middleIm{
+        width: 30%;
+    }
+    h4{
+        font-family: 'Times New Roman', Times, serif;
+        /* color: blueviolet; */
+        font-size: medium;
+        line-height: 150%;
+    }
 
     input[type=text], select {
         width: 25%;
         padding: 12px 20px;
         box-sizing: border-box;
         margin: 8px 0;
+        /* background-color: tomato; */
     }
 
     input[type=submit]{
-        position: center;
+        
+        position: center; /* Place center  */
         width: 30%;
         padding: 14px 20px;
         box-sizing: border-box;
@@ -73,26 +93,55 @@
         padding-left: 5%;
         padding-bottom: 5%;
     }
+    h1{
+        font-size: 300%;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    button{
+        background-color: rgb(225, 180, 30);
+        color:  rgb(0, 0, 0);
+        position: relative; 
+            width: 20%;
+            height: 50%;
+            margin-left: 2%;
+            border: none; 
+            padding: 1%; 
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    }
+    
+    @media screen and (max-width: 900px){
+            .column {
+                width: 100%;
+                margin-bottom: 5%;
+                align-items: center;
+            }
+            img{
+                width: 50%;
+            }
+        }
     </style>
+	
 	<script type = "text/javascript" >
-		firstNArray = [];
-    		lastNArray = [];
-		emailArray = [];
-		
-		function UpdateList(){
-		x = document.getElementById('fName');
-		firstName = x.value;
-		firstNArray.push(firstName);
+    firstNArray = [];
+    lastNArray = [];
+    emailArray = [];
 
-		y = document.getElementById('lName');
-		lastName = y.value;
-		lastNArray.push(lastName);
+    function UpdateList(){
+        x = document.getElementById('fName');
+        firstName = x.value;
+        firstNArray.push(firstName);
 
-		z = document.getElementById('email');
-		email= z.value;
-		emailArray.push(email);
-		}
-	</script>
+        y = document.getElementById('lName');
+        lastName = y.value;
+        lastNArray.push(lastName);
+
+        z = document.getElementById('email');
+        email= z.value;
+        emailArray.push(email); 
+    }
+</script>
     
 </head>
 
@@ -133,43 +182,63 @@
     </nav>
 	<div class="nav_space"></div>
 
-    <h1 style="text-align:center"> Let's Meet! </h1>
+    <h1 style="text-align:center"> Contact Us </h1>
 
-    <!-- form  -->
-	<h2> Stay in the Know </h2>
-        <form onsubmit = "UpdateList()"> 
+    <div class = "row">
+        <div class = " column left" style="margin-left: 2%;">
+            <h2> Stay in the Know </h2>
+
+            <form onsubmit = "UpdateList()"> 
         
-        <h3 style="padding-left: 5%";> Sign up with your email address to recieve news and updates about Golden Door Scholars. </h3>
+            <h3> Sign up with your email address to recieve news and updates about Golden Door Scholars. </h3>
+            
+            <input  type="text" name = "First Name" id = "fName" placeholder = "First Name">
+            <input  type="text" name = "Last Name" id = "lName" placeholder = "Last Name">
+            <input  type="text" name = "Email Address" id = "email" placeholder = "Email Address">
+            <button type="submit" id = "submit" >   Yes Please! </button> 
+            </form>
+            
+            <div>
+                <div class = "row" style="margin-top: 4%; place-content: left;" > 
+                    <div class = "column leftIm" >
+                        <img src="Valerie Lopez.jpeg" width="60%" style="margin-right: 2%;">
+                        <h3> Valerie Lopez</h3>
+                    </div>
+                    
+                    <div class = "column middleIm" >
+                        <img src="zahir-namane.jpeg" width="60%" >
+                        <h3> Zahir Namane </h3>
+                    </div>
+                    <div class = "column rightIm" style="padding-top: 5%;">
+                        <h4> Valerie - Logistical questions </h4>
+                        <h4> Zahir - Financial questions  </h4>
+                        <button type="button"  onclick="window.open('mailto:info@goldendoor_scholars.org','_blank')" style="width: 70%; font-size: large;"> Email </button>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <input  type="text" name = "First Name" id = "fName" placeholder = "First Name">
-        <input  type="text" name = "Last Name" id = "lName" placeholder = "Last Name">
-        <input  type="text" name = "Email Address" id = "email" placeholder = "Email Address">
-        <input  type="submit" value ="YES PLEASE!" >
-        </form>
-	
+        <div class = "column right">
+            <h2> Hedquarters </h2>
+            <img src="building1.jpeg" width="70%" style="margin-top: 0%;">
+            <div class = "row">
+                <h3> 1423 Red Ventures Drive, Fort Mill, SC 29707 </h3>
+                <h3> Office Phone: +1(843)-233-4894 </h3>
+                <h3> Email: info@goldendoor_scholars.org </h3>
+            </div>
+        </div>
+        
+    </div>
+   
     <!-- social media  -->
-    <div class = "socials">
+    <div style="margin-bottom: 5%;">
         <h1 style="text-align:center; padding-top: 5%;">  Connect With The Community! </h1> 
 
             <a href= "https://www.instagram.com/goldendoorscholars/?hl=en" target="_blank" class="fa fa-instagram" style="margin-left: 10%;"></a>
             <a href= "https://www.facebook.com/GoldenDoorScholars" target="_blank" class="fa fa-facebook" ></a>
             <a href= "https://www.youtube.com/channel/UCKl7Gq3eUZUuWiVUA3M6PvQ" target="_blank" class="fa fa-youtube"></a> 
             <a href= "https://www.linkedin.com/company/golden-door-scholars/" target="_blank" class="fa fa-linkedin"></a> 
-            <a href= "https://twitter.com/goldendoorschol?lang=en" target="_blank" class="fa fa-twitter"></a> 
-    </div>
-
-    <div class = "row" style="background-color: rgb(199, 165, 199);">
-        <div class = "column left">
-            <h1> Pending</h1> 
-        </div> 
-
-        <div class = "column right">
-            <h3> Hedquarters </h3>
-            <h4> Phone: +1(843)233-4894 </h4>
-            <h4> Email: info@goldendoorscholars.org </h4> <!--- make this a popup link -->
-            <h4> 1423 Red Ventures Drive <br> Fort Mill, SC 29707 </h4>
-            
-        </div>
+            <a href= "https://twitter.com/goldendoorschol?lang=en" target="_blank" class="fa fa-twitter"></a> <!-- TO DO: Ask someone who has twitter to find them-->
     </div>
 
     <footer> 
