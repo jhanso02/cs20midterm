@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+    <title> Scholar Testimonials </title> 
+    <style>
+        .row:after{
+            content:"";
+            display: table;
+            clear:both;
+        }
+        .column{
+            float: left;
+            text-align: center;
+            margin-top: 0%;
+            
+        }
+        .left{
+            width:30%;
+            margin-left: 2%;
+            margin-top: 5%;
+        }
+        .middle1{
+            width:30%;           
+            margin-top: 5%;
+        }
+        .middle{
+            width:30%;           
+            margin-top: 5%;
+        }
+        .right{
+            width:30%;           
+            margin-top: 5%;
+        } 
+        .right2{
+            width:35%;           
+            margin-top: 5%;
+        } 
+
+        .left:hover {
+            background-color: rgb(190, 190, 22);
+        }
+        .left2:hover {
+            background-color: rgb(43, 137, 226);
+        }
+        .middle:hover {
+            background-color: rgb(190, 190, 22);
+        }
+        .right2:hover {
+            background-color: rgb(43, 137, 226);
+        }
+        .right:hover {
+            background-color: rgb(43, 137, 226);
+        }
+
+        h1 {
+            font-size: xx-large;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+        }
+        .s1{
+            position: relative;
+        }
+        .overlay{
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 2%;
+            right: 0;
+            height: 0%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+        }
+        .s1:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+        color: rgb(0, 0, 0);
+        font-size: x-large;
+        position: relative;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+        #quoteB{
+            text-align: center; 
+            padding: 10%; 
+            padding-bottom: 0%; 
+            padding-top: 5%; 
+            font-size:xx-large; 
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+            p{
+                font-size: 100%;
+            }
+            h2{
+                font-size: xx-large;
+            }
+            h3{
+                font-size: xx-large;
+            }
+        }
+    </style> 
+</head>
+
+<body>
+    <nav class="nav">
+		<div class="nav_image">
+			<a href="index.html"><img src="images/GDS-Torch-Door-Logo.png"></a>
+		</div>
+		
+		<ul class="navbar_right">
+            <li>
+				<a href="who-we-are.html">Who We Are</a>
+			</li>
+            <li>
+				<a href="Contact Us.html">Contact Us</a>
+			</li>
+            <li>
+				<a href="scholar-testemonial.html">Scholar Testimonials</a>
+			</li>
+			<li>
+				<a href="future-scholars.html">Future Scholars</a>
+			</li>
+			
+			<li>
+				<a href="Partner-Schools.html">Partner Schools</a>
+			</li>
+			<li>
+				<a href="faq.html">FAQ</a>
+			</li>
+			
+			<li>
+				<a href="Support-Us.html">Support Us</a>
+			</li>
+		</ul>
+	</nav>
+    <div class="nav_space"></div>
+
+    <h1 style = "font-size:400%; margin-bottom: 2%;"> Testimonials </h1>
+
+    <div class = "row">
+        <div class="column left">
+            <img src="images/Tanya .jpeg" width="90%" style="border: solid 4px rgb(190, 190, 22);">
+        </div>
+
+        <div class = " column middle1"> 
+            <div style="padding-top: 70%; text-align: left; padding-left: 2%;">
+                <h2> Tanya Williams </h2>
+                <h3> Home Town: Mexicali, Mexico</h3>
+                <h3> College: Elon University</h3>
+                <h2 style="line-height: 150%;">
+                    "This scholarship paved the way for my future 
+                    and helped me become the tenacious individual I am today."
+                </h2>
+            </div>
+        </div>
+
+        <div class="column right2">    
+            <h2> "Golden Doors is more than a program it is a family. It became my family."</h2>
+            <img src="images/jeswin-thomas.jpeg" width="99%" style="border: solid 4px rgb(42, 128, 191);">
+            <div style="text-align: right;margin-right: 1%;">
+                <h2> Jeswin Thomas</h2>
+                <h3> Home Town: Pheonix, Arizona</h3>
+                <h3> College: Rhodes College </h3>
+            </div>
+        </div>
+    </div>
+
+    <p id = "quoteB" class ="slide" > 
+        "I never thought that a person like me could attend college. 
+        As a first generation college student born to immigrant parents, I  always knew that the educational system was 
+        not built for people like me. But through this program I was fortunate enough to attend a four year institutution. - Rebecca Hernández" 
+    </p>  
+    
+    <!-- row of images  -->
+    <div class = "row" style="margin-left: 5%;">
+        <div class = "column left" >
+            <div class="s1">
+                <!-- TODO: FIX THIS COLORING!! -->
+                <img id = "s1" src="images/Antoinette.jpeg" width="85%" style="border: solid 4px rgb(43, 137, 226);">
+                <h2> Antoinette Lopez</h2>
+                <h3> Home Town: Washington DC </h3>
+                <h3> College: Franklin & Marshall College</h3>
+                <h3 style="margin-bottom: 10%; text-align: justify;line-height: 150%;">
+                    "I was the only one in my family that came to the states and 
+                    this community helped me adjust and became my second family."
+                </h3>
+            </div>
+        </div>
+
+        <div class = " column middle" style="margin-left: 1%;">
+            <img id = "s2" src="images/jackson-david.jpeg" width="85%" style="border: solid 4px rgb(190, 190, 22);">
+            <h2> David Wilson </h2>
+            <h3> Home Town: San Francisco  </h3>
+            <h3> College: Wake Forest University </h3>
+            <h3 style="line-height: 150%;">
+                "Inspired by the pride of other immigrant teens I interacted with in this program, I aim to 
+                continue my activism work and create immigration policies." 
+            </h3>
+        </div>
+
+        <div class = "column right" style="margin-left: 1%;">
+            <img id = "s3" src="images/Lee Qin.jpeg" width="90%" style="border: solid 4px rgb(43, 137, 226);">
+            <h2> Lee Qin </h2>
+            <h3> Home Town: Great Falls, Montana </h3>
+            <h3> College: Tufts University </h3>
+            <h3 style="line-height: 150%;">
+                "Although I am uncertain of what the future will bring, the bad and good I have experienced, this program 
+                taught me that the most valuable thing I possess is my determination to live."
+            </h3>
+        </div>
+    </div>
+
+    <p id ="quoteB" class = "slide" style="margin-top: 0%; margin-bottom: 5%;">
+        “It’s all about what you put in. If you are trying to make the most of your experience 
+        within the higher-education realm, as an undocu/DACA-student this is the best way to do it.”
+    </p>
+    <footer> 
+		<nav class="footer">
+			<br><br>
+			<ul>
+					<a href="index.html"> Home </a> &nbsp;
+					<a href="who-we-are.html"> Who Are We </a> &nbsp; 
+					<a href="Contact Us.html"> Contact Us </a> &nbsp;
+					<a href="scholar-testemonial.html"> Scholar Testimonial Page </a> &nbsp; 
+					<a href="future-scholars.html"> Future Scholars </a> &nbsp;
+					<a href="Partner-Schools.html"> Partner Schools </a> &nbsp;
+					<a href="faq.html"> FAQ </a> &nbsp;
+					<a href="Support-Us.html"> Support Us </a> &nbsp;
+			</ul>
+			<hr>
+			<div class="footerImage">
+				<img alt="index.html" src="images/GDSlogo.png">
+			</div>
+			<hr>
+			<h3> Copyright &copy; 2021 Golden Door Scholars. </h3> 
+			<br>
+		</nav>
+	</footer>
+</body>
+
+</html>
