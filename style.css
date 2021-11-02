@@ -109,6 +109,7 @@
 
 .footer a{
 	text-decoration: none;
+    color: #000;
 }
 
 .footerImage img{
@@ -123,8 +124,7 @@
 }
 
 .footer a:hover {
-    color: #d5d5d4;
-    background-color: #F6F6F6;
+    color:rgb(190, 190, 22);
 }
 
 /* line that seperates the footer with the image */
