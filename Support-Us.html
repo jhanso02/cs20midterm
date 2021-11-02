@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <Title> Support Us</Title>
+    <Title> Support Us- Golden Door Scholars</Title>
+    <link rel="icon" href="images/tab_icon.png">
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Donation form for Golden Door Scholars fund">
+    <meta name="keywords" content="support us, donation, support, funding, scholarship, undocumented student, golden door scholars">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="style.css">
     <title>Support Us</title>
     <style>
-        h2, p, form {
+        h1, p, form {
         text-align: center;
         
         }
@@ -86,7 +93,11 @@
 			<a href="index.html"><img src="images/GDS-Torch-Door-Logo.png"></a>
 		</div>
 		
-		<ul class="navbar_right">
+		<ul class="navbar_right" id = "my_nav_right">
+
+            <!-- Hamburger Menu Icon -->
+            <a href="javascript:void(0);" class="icon" onclick="responsive_nav()">   <i class="fa fa-bars"> </i>
+            </a>
             <li>
 				<a href="who-we-are.html">Who We Are</a>
 			</li>
@@ -115,20 +126,21 @@
     <div class="nav_space"></div>
     
     <div class='intro_to_supportus'>
-    <h2>Support Us</h2>
+    <h1>Support Us</h1>
         <p>You are the reason millions of high school graduates are in their dream
         universities. <br>With your support, we are able to fund these
         students through their university degrees.<br> You are what inspires them to work hard in school.<br>
         We are grateful to you for being the reason for our success.
         <br> If you would like to support our efforts, here is a form to fill out: </p>
     </div>
+
     <script language='javascript'>
         function validateForm(){
-	    let p = document.forms["myForm"]["donation"].value;
+            let p = document.forms["myForm"]["donation"].value;
             let x = document.forms["myForm"]["fname"].value;
             let y = document.forms["myForm"]["lname"].value;
             let z = document.forms["myForm"]["email"].value;
-	 
+        
             if(x == ""){
                 alert("First Name must be filled out");
                 return false;
@@ -141,11 +153,32 @@
                 alert("Email Adress must be filled out");
                 return false;
             }
-	    if(p == ""){
+            if(p == ""){
                 alert("Donation Amount must be filled out");
                 return false;
             }
+            
+            showConfirmation();
+
+            return true;
         }
+
+
+        function showConfirmation(){
+            var confirm_window = window.open("", "confirmation", "width=350,height=250");
+
+            thank_you_msg = "<p>Thank you " 
+                + document.forms["myForm"]["fname"].value 
+                + " " + document.forms["myForm"]["lname"].value 
+                + " for your support!</p><br/>";
+            confirm_window.document.write(thank_you_msg);
+
+            details_msg = "<p>Your donation was recieved for $" +
+                document.forms["myForm"]["donation"].value + "</p>"
+            confirm_window.document.write(details_msg);
+
+        }
+
     </script>
 
 <div class="container">
@@ -226,8 +259,18 @@
         <h3> Copyright &copy; 2021 Golden Door Scholars. </h3> 
         <br>
     </nav>
-</footer>	
+</footer>
+
+<script language=javascript>
+    function responsive_nav() {
+        var x = document.getElementById("my_nav_right");
+        if (x.className == "navbar_right") {
+            x.className += " open";
+        } else {
+            x.className = "navbar_right";
+        }
+    }
+</script>
     
 </body>
-
 </html>
